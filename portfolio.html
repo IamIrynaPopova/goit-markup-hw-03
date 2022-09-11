@@ -21,45 +21,50 @@
   <body>
     <!-- Шапка сайту -->
     <header>
-      <!--Навігація-->
-      <nav>
+     <!--Навігація-->
+      <div class="container header-container">
         <a href="./index.html" class="logo"
           >Web<span class="logo-two">Studio</span>
         </a>
-        <ul class="site-nav">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li>
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
+        <nav>
+          <ul class="site-nav flex">
+            <li class="item-site-nav">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item-site-nav">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="item-site-nav"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="site-nav flex-grey">
+          <li class="item-site-grey">
+            <a href="mailto:info@devstudio.com" class="link grey"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="" class="link">Контакти</a></li>
+          <li class="item-site-grey">
+            <a href="tel:+380961111111" class="link grey">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="site-nav">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link grey"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link grey">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Головна -->
     <main>
       <section>
         <!-- Portfolio-->
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <!--Buttons  -->
-        <ul class="buttons">
-          <li><button type="button" class="button-nav">Усі</button></li>
-          <li><button type="button" class="button-nav">Веб-сайти</button></li>
-          <li><button type="button" class="button-nav">Додатки</button></li>
-          <li><button type="button" class="button-nav">Дизайн</button></li>
-          <li><button type="button" class="button-nav">Маркетинг</button></li>
+        <ul class="buttons buttons-container">
+          <li class="item-buttons-container"><button type="button" class="button-nav">Усі</button></li>
+          <li class="item-buttons-container"><button type="button" class="button-nav">Веб-сайти</button></li>
+          <li class="item-buttons-container"><button type="button" class="button-nav">Додатки</button></li>
+          <li class="item-buttons-container"><button type="button" class="button-nav">Дизайн</button></li>
+          <li class="item-buttons-container"><button type="button" class="button-nav">Маркетинг</button></li>
         </ul>
-        <!-- Projects -->
-        <ul class="projects">
+                <!-- Projects -->
+        <ul class="projects projects-flex">
           <li>
             <a href="" class="link-projects"
               ><img src="./image/tehno.jpg" alt="laptop" width="370" />
@@ -132,16 +137,18 @@
             >
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
-      <a href="./index.html" class="logo"
+     <footer class="footer">
+      <div class="container">
+      <a href="./index.html" class="logo footer-flex"
         >Web<span class="logo-three">Studio</span>
       </a>
       <address>
-        <ul class="contacts">
-          <li>
+        <ul class="contacts container-footer">
+          <li class="item-container-footer">
             <a
               href="https://goo.gl/maps/tXM1PvSKnXk6XvrT7"
               rel="noopener noreferrer nofollow"
@@ -150,18 +157,19 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="item-container-footer">
             <a href="mailto:info@devstudio.com" class="contact link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item-container-footer">
             <a href="tel:++380961111111" class="contact link"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
